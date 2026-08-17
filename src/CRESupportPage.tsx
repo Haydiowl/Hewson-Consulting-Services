@@ -8,9 +8,7 @@ function IntroSection() {
   return (
     <div className="bg-[#f8f9fa] w-full px-3 md:px-[40px] py-5 md:py-8">
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
-        Our integrated CRE services and allied support offers organizations with exceptional core management &amp; IT
-        application services, alongside project development &amp; planning. Ours empower senior executive teams,
-        developers and companies to perform with seamless effort.
+        Our integrated CRE services offer organizations with exceptional core management &amp; IT application services, alongside project development &amp; planning. Ours empower senior executive teams, developers and companies to perform with seamless effort. Our business service division and technical support division offer a one-stop solution center 
       </p>
     </div>
   );
@@ -23,7 +21,7 @@ function IntroSection() {
 const FLAGSHIP_SERVICES = [
   {
     title: "Strategy Formulation Support",
-    body: "We formulate bold strategy that serves as working plan for achieving company's end objective. Our strategies assist operators in situating their visions right, prioritizing goals, competing with insight, and optimizing income. Besides, our strategies give expression to business models, because models provide the platform for strategy design, competitive edge and market success.",
+    body: "We formulate bold strategy that serves as working plan for achieving company's end objective. Our strategies assist operators in situating their visions right, prioritizing goals, competing with insight, and optimizing income. Besides, our strategies give expression to business models; as models provide the platform for strategy design, competitive edge and market success.",
     img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
     alt: "Strategy formulation",
   },
@@ -46,8 +44,8 @@ const FLAGSHIP_SERVICES = [
     alt: "Project development",
   },
   {
-    title: "Resource Acquisition Support",
-    body: "We provide support in manpower and project finance, which organizations need to achieve their pursuit. We recruit best-fit staff and enhance human capital through training. Our relationship with financial institutions helps operators ease the burden of securing loans. Real-estate project developers find solutions to resource needs through our practical support.",
+    title: "Business Resources Support",
+    body: "We provide support in manpower and project finance, which organizations often require to achieve their pursuit. We recruit best-fit staff and enhance human capital through training. Our relationship with financial institutions helps operators ease the burden of securing loans. Real-estate project developers find solutions to resource needs through our practical support.",
     img: "https://images.unsplash.com/photo-1521791136064-7986c2920216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
     alt: "Resource acquisition",
   },
@@ -57,7 +55,7 @@ function FlagshipServicesSection() {
   return (
     <div className="bg-white w-full px-3 md:px-[40px] py-6 md:py-10">
       <h2 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[20px] md:text-[28px] lg:text-[36px] text-center leading-tight">
-        Our Flagship Business/ Technical Support Services:
+        Our Flagship Support Services
       </h2>
       <div className="flex flex-col gap-5 md:gap-6 mt-8 md:mt-12">
         {FLAGSHIP_SERVICES.map(({ title, body, img, alt }) => (

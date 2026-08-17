@@ -307,7 +307,7 @@ function AboutSection() {
   return (
     <div id="about" className="bg-[#f8f9fa] flex items-center justify-start px-3 md:px-[40px] py-6 md:py-10 w-full">
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[14px] md:text-[16px] lg:text-[19px] text-justify leading-[1.7] w-full">
-        We are an independent niche consultancy firm, operating as strategic growth architects and technical project facilitators. Our consulting hands possess core management, IT, appraisal and related skill capacity. Hewson Consulting has functional domain expertise, which enable us serve as business force multiplier for operators across industries, mostly commercial real estate (CRE) &amp; allied enterprise. Our specialists assist executives to overcome critical challenges, and transform their business. Our engagement offers effective change, innovation &amp; impact.
+       We are an accredited niche consulting firm, operating as strategic growth architects and technical project facilitators. Our consultancy team comprises core management, IT, appraisal and related field experts with subject matter insight. The practice has specialized domain expertise that enables us function as business force multiplier for companies across commercial real estate (CRE) &amp; allied industry. Our experience help industry players overcome critical challenges and transform their business pursuit.  ; 
       </p>
     </div>
   );
@@ -336,11 +336,12 @@ function ContentSections() {
         </div>
         <div className="flex md:flex-1 items-center px-1 md:px-5 py-3 md:py-6">
           <div className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] space-y-1 w-full">
-            <p className="text-justify">We leverage our know how to develop the solutions clients require to accomplish set objective. As consultants, we undertake:</p>
+            <p className="text-justify">We leverage our knowhow in developing smart solutions that accomplish set goals. As consultants, we undertake the following:</p>
             {SERVICE_ITEMS.map((item) => (
               <p key={item}>••  {item}</p>
             ))}
-            <p className="text-justify pt-2">We systematize your business for improved work productivity, profit &amp; proficiency.</p>
+            <p className="text-justify pt-2">We improve overall productivity, profit &amp; proficiency. Our expertise ensures innovative change, expansion and growth.
+</p>
           </div>
         </div>
       </div>
@@ -348,7 +349,7 @@ function ContentSections() {
       {/* Section 2 — full-width text */}
       <div className="px-1 md:px-5 py-3 md:py-6">
         <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.84] text-justify w-full">
-          At Hewson, we recognize that effectiveness in management process, technology and strategy formulation drive profitability. When properly fitted together, they provide the synergism that accentuate value increase that ultimately drive corporate growth. Real-estate &amp; allied organizations also require niche consultants - such as ours - for problem solving, improvement and fresh perspective. Our experience offers strategic level initiatives, sound decision-aiding analytics and innovative smart solutions.
+          At Hewson, we recognize that effectiveness in management process, technology and strategy execution drive profitability. When properly fitted together, their combined synergy accentuates value increase, which ultimately drive corporate growth. Ultimately, real estate &amp; allied organizations also require niche consultants - such as ours - for problem solving, improvement and fresh perspective. Our guidance offers strategic level initiatives, sound decision-aiding analytics and innovative smart solutions.;
         </p>
       </div>
     </div>
@@ -357,7 +358,7 @@ function ContentSections() {
 
 function WhyConsultUs() {
   const leftItems = [
-    "We solve organization's business challenges and complex real-estate issues through our experts.",
+    "We solve organization's business challenges and complex real-estate issues through team aproach.",
     "We deliver analytics that empower senior executives to make informed, critical decisions.",
     "We provide actionable field strategies and support that enable players surpass set targets.",
   ];

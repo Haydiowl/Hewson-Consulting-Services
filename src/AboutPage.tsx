@@ -8,19 +8,11 @@ function AboutIntro() {
   return (
     <div className="bg-[#f8f9fa] w-full px-3 md:px-[40px] py-6 md:py-10 flex flex-col gap-4 md:gap-6">
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
-        We are a problem-solving enterprise with industry niche, consisting of thorough bred management,
-        IT, real-estate and allied experts. We delight in supporting teams, optimizing business
-        performance, driving decision making, enhancing project development and bridging skill
-        deficiency. Our practice is located in Nigeria and registered in 2018.
+        Our practice is a problem-solving enterprise with industry niche, established in Nigeria and operating since 2018. We specialize in bridging the hollow gap between core management, IT system, and real-estate business operations in order to improve estate projects, asset performance and financial ROI metrics for CRE/allied sector companies.
       </p>
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
-        Hewson Consulting Services specializes in bridging the gap between core management, IT system,
-        and real-estate business operations in order to improve estate projects, asset performance and
-        financial ROI metrics for CRE/allied sector companies. In the complex landscape of high-stake
-        real estate, success isn't just about acquiring CRE assets but optimizing their returns.
-        It's more about the structural stability of the business that operate them, and their capacity
-        to optimize net earnings and leverage on existing assets as resources for acquisition of further
-        assets. Outcomes that require expert strategic guide.
+        In the complex landscape of high-stake real estate, success isn’t just about acquiring CRE assets but optimizing their returns. It’s more about the structural stability of the business that operate them, and their capacity to optimize net earnings and leverage on existing assets as resources for acquisition of further assets. Outcomes that require expert strategic guide. 
+
       </p>
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
         Our business service division offer support to companies that aspire to improve their
@@ -75,7 +67,7 @@ const SERVICE_CARDS = [
   },
   {
     title: "Corporate Vision",
-    body: "To be globally reputed for excellence as industry niche consultant whose clientele obtain satisfaction.",
+    body: "To be globally reputed for excellence in enterprise growth consultancy as industry niche expert.",
   },
   {
     title: "Mission Statement",

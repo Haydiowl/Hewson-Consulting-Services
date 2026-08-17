@@ -41,10 +41,7 @@ function Intro() {
   return (
     <div className="bg-white w-full px-3 md:px-[40px] py-5 md:py-8">
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
-        Hewson Consulting offers management support packages and strategic due diligence. Our services
-        help operators solve business and technical issues stretching across general CRE operations,
-        strategy, info systems, project analytics and resource provision. Our business service division
-        and technical support division offer a one-stop solution center.
+        We offer management wide support to organizations and strategic due diligence to private equity firms operating under our defined sector. Our services help operators solve business and technical issues stretching across general operations, core function and capital provision.
       </p>
     </div>
   );
@@ -115,8 +112,8 @@ const TECHNICAL_CARDS = [
     title: "Asset Valuations & Advisory",
     items: [
       "Real-estate portfolio & investment auditing",
-      "Business Enterprise & tangible asset valuations",
-      "Spatial locational analysis & highest best use",
+      "Business Concern & tangible asset valuations",
+      "Spatial location, highest & best use analysis",
     ],
   },
 ];
@@ -180,7 +177,7 @@ const OUTLINE_ITEMS = [
 function ServiceOutlineSection() {
   return (
     <div className="bg-white w-full px-3 md:px-[40px] py-5 md:py-8 ">
-      <SectionHeading>3. Our Service Outline</SectionHeading>
+      <SectionHeading>3. Service Breakdown</SectionHeading>
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[15px] lg:text-[17px] leading-[1.6] mb-4">
         Our services help organizations to overcome critical pain points:
       </p>
@@ -203,12 +200,9 @@ function ServiceOutlineSection() {
 function CRESupportSection() {
   return (
     <div className="bg-white w-full px-3 md:px-[40px] py-5 md:py-8">
-      <SectionHeading>4. Our Enterprise CRE Support Services</SectionHeading>
+      <SectionHeading>4. Our Enterprise CRE Support</SectionHeading>
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
-        Hewson Consulting offers management support packages and strategic due diligence. Our services
-        help operators solve business and technical issues stretching across general CRE operations,
-        strategy, info systems, project analytics and resource provision. Our business service division
-        and technical support division offer a one-stop solution center.
+        We practice at the intersection of real-estate pursuit, technology and management practice and, therefore, well positioned as experts in enterprise level, real-estate business consulting. We offer special packages to clients as business advisors, IT integrators & project appraisers, who delight in empowering teams, optimizing business performance, driving decision making, enhancing project development and bridging skill deficiency. Explore More, Click: CRE Support
       </p>
     </div>
   );

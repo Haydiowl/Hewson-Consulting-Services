@@ -48,14 +48,14 @@ function TeamContent() {
     <main className="w-full bg-white px-4 md:px-[40px] py-7 md:py-9 flex flex-col items-center">
       <section className="w-full text-center">
         <h1 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[23px] md:text-[28px] leading-tight">
-          Consulting CEO/ Principal
+          Consulting Principal/CEO
         </h1>
         <h2 className="mt-3 font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[17px] md:text-[21px] leading-tight">
           <span aria-hidden="true" className="mr-2">•</span>Mr. Matthew A. Aziegbe
         </h2>
-        <p className="mt-3 font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[15px]">BSc, FIMC, MNIVS, MNCS, RSV</p>
+        <p className="mt-3 font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[15px]">CMC, FIMC, MNIVS, MNCS, RSV</p>
         <p className="mt-5 md:mt-6 font-['Inter:Medium',sans-serif] font-medium text-[#565966] text-[13px] md:text-[16px] leading-[1.7] text-justify">
-          A multi-disciplinary fellow, practicing as a professionally certified management analyst, accredited techie, chartered estate surveyor and registered valuer. In his functional role as a strategic growth architect &amp; technical CRE advisor, Mr. M. A. Aziegbe has anchored major activities for organizations. His innate bent features cross-functional skill, analytical thinking, creativity and problem solving. He provides overall leadership, direction and brand awareness. <a href="#/blog" className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] underline">View Blog to See Full Profile</a>
+          A multi-disciplinary fellow, practicing as a professionally certified management analyst, accredited techie, chartered estate surveyor and registered valuer. In his functional role, Mr. Aziegbe has anchored major activities for organizations. His innate bent features cross-functional skill, analytical thinking, creativity and problem solving. He provides overall leadership, direction and brand awareness. <a href="#/blog" className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] underline">View Blog to See Full Profile</a>
         </p>
       </section>
 
