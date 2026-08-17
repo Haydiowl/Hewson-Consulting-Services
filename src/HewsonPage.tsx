@@ -14,7 +14,7 @@ const SLIDES = [
   {
     text: "Operations",
     sub: "Streamlining business processes and optimizing performance across your entire organisation for measurable, lasting results.",
-    img: "https://images.unsplash.com/photo-1573164574511-73c773193279?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920",
+    img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=85",
   },
   {
     text: "Strategy",
@@ -98,7 +98,7 @@ function Logo() {
   );
 }
 
-export function NavBar() {
+export function NavBar({ topButtonLabel = "Blog", topButtonHref = "#/blog" }: { topButtonLabel?: string; topButtonHref?: string } = {}) {
   const [menuOpen, setMenuOpen] = useState(false);
   const { query, results, open: searchOpen, setOpen: setSearchOpen, search, go } = useSearch();
   const searchRef = useRef<HTMLDivElement>(null);
@@ -124,7 +124,7 @@ export function NavBar() {
         <div className="hidden md:flex items-end justify-center font-['Inter:Medium',sans-serif] font-medium text-[#565966] whitespace-nowrap gap-0 text-[15px] lg:text-[17px] xl:text-[20px]">
           <a href="tel:+2348066894422" className="hover:text-[#ff383c] transition-colors">Our Hotline</a>
           <span className="mx-3 text-[#dfe2e8]">|</span>
-          <a href="mailto:info@hewson-consult.com" className="hover:text-[#ff383c] transition-colors">Email Box</a>
+          <a href="#/contact" className="hover:text-[#ff383c] transition-colors">Email Box</a>
         </div>
 
         {/* RIGHT — blog + search (desktop) + hamburger (mobile, right) */}
@@ -135,9 +135,9 @@ export function NavBar() {
             <span className={`block h-[2px] w-6 bg-[#232323] transition-all duration-200 ${menuOpen ? "opacity-0" : ""}`} />
             <span className={`block h-[2px] w-6 bg-[#232323] transition-all duration-200 origin-center ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
           </button>
-          <a href="#blog"
+          <a href={topButtonHref}
             className="hidden sm:flex bg-[#ff383c] hover:bg-[#e02d31] active:bg-[#c0272a] transition-colors items-center justify-center h-[38px] md:h-[44px] px-4 rounded-[10px] shrink-0 no-underline">
-            <span className="font-['Inter:Medium',sans-serif] font-medium text-[14px] md:text-[16px] text-white">Blog</span>
+            <span className="font-['Inter:Medium',sans-serif] font-medium text-[14px] md:text-[16px] text-white">{topButtonLabel}</span>
           </a>
 
           {/* Search — desktop only */}
@@ -231,9 +231,9 @@ export function NavBar() {
               {label}
             </a>
           ))}
-          <a href="#blog" onClick={() => setMenuOpen(false)}
+          <a href={topButtonHref} onClick={() => setMenuOpen(false)}
             className="bg-[#ff383c] hover:bg-[#e02d31] transition-colors text-white text-[15px] font-['Inter:Medium',sans-serif] no-underline text-center py-2 rounded-[10px] mt-1">
-            Blog
+            {topButtonLabel}
           </a>
         </div>
       )}
@@ -250,7 +250,7 @@ export function Hero() {
     <div className="relative w-full overflow-hidden py-12 md:py-20">
       {/* background image */}
       <div className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1573164574511-73c773193279?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920')" }} />
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=85')" }} />
       {/* red overlay */}
       <div className="absolute inset-0 bg-[#c30307]/80" />
       {/* ticker — constrained to 70% width so text never reaches screen edges */}
@@ -446,7 +446,7 @@ export function Footer() {
           BLOG (Articles, News &amp; Events)
         </p>
         <div className="flex gap-[8px] items-center shrink-0">
-          <SocialButton href="https://linkedin.com">
+          <SocialButton href="https://www.linkedin.com/in/matthew-a-aziegbe-fimc-mnivs-mncs-rsv-81729634/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgxZ3NtE2QtGFcODuurfl%2Fg%3D%3D">
             <svg fill="none" height="20" viewBox="0 0 20 20" width="20"><path d={svgPaths.p32c13b80} fill="#232323" /></svg>
           </SocialButton>
           <SocialButton href="https://facebook.com">

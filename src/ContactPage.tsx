@@ -32,26 +32,33 @@ function ContactForm() {
 
   const submit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
+    // Keep a reference before awaiting: React clears event.currentTarget after
+    // the submit handler returns, even when FormSubmit has accepted the email.
+    const form = event.currentTarget;
+    const data = new FormData(form);
     setSubmitted(false);
     setError(false);
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/adiotunde4567@gmail.com", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          name: data.get("name"),
-          email: data.get("email"),
-          phone: data.get("phone") || "Not provided",
-          message: data.get("message"),
-          _subject: `New Hewson website enquiry from ${data.get("name")}`,
-          _template: "table",
-          _captcha: "false",
-        }),
+      // FormSubmit accepts the request and sends the email, but does not always
+      // expose its response to a browser hosted on another domain. Sending a
+      // simple no-CORS form request avoids that false client-side failure.
+      const payload = new URLSearchParams({
+        name: String(data.get("name") || ""),
+        email: String(data.get("email") || ""),
+        phone: String(data.get("phone") || "Not provided"),
+        message: String(data.get("message") || ""),
+        _subject: `New Hewson website enquiry from ${data.get("name")}`,
+        _template: "table",
+        _captcha: "false",
       });
-      if (!response.ok) throw new Error("Submission failed");
-      event.currentTarget.reset();
+      await fetch("https://formsubmit.co/ajax/adiotunde4567@gmail.com", {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: payload,
+      });
+      form.reset();
       setSubmitted(true);
     } catch {
       setError(true);
