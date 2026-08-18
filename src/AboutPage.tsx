@@ -14,7 +14,7 @@ function AboutIntro() {
         In the complex landscape of high-stake real estate, success isn’t just about acquiring CRE assets but optimizing their returns. It’s more about the structural stability of the business that operate them, and their capacity to optimize net earnings and leverage on existing assets as resources for acquisition of further assets. Outcomes that require expert strategic guide. 
 
       </p>
-      <div className="flex flex-col gap-4 md:flex-row md:items-stretch"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85" alt="Commercial real estate" className="h-[230px] w-full rounded-[10px] object-cover md:h-auto md:w-2/5" /><p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify md:flex-1">
+      <div className="flex flex-col gap-4 md:flex-row md:items-stretch"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85" alt="Commercial real estate" className="h-[230px] w-full rounded-[10px] object-cover md:h-[230px] md:w-2/5 md:self-start" /><p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify md:flex-1">
         Our business service division offer support to companies that aspire to improve their
         performance and profitability in the most effective way. Accordingly, we institute for companies
         the organizational processes, technology and practices that optimize their operations. Our
@@ -36,7 +36,7 @@ function ImageTextSection() {
         <img
           src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85"
           alt="Modern commercial office interior for technical project support"
-          className="h-[230px] w-full rounded-[10px] object-cover md:h-auto md:w-2/5"
+          className="h-[230px] w-full rounded-[10px] object-cover md:h-[230px] md:w-2/5 md:self-start"
         />
         <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify md:flex-1">
           Our technical support division handle enterprise-level development project, stretching from
