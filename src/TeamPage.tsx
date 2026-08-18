@@ -1,4 +1,5 @@
 import { Footer, Hero, NavBar, NavLinks } from "./HewsonPage";
+import teamProfileSilhouette from "./imports/team-profile-silhouette.png";
 
 type TeamMember = {
   name: string;
@@ -20,9 +21,14 @@ function Rule() {
   return <div className="h-px w-[min(100%,370px)] bg-[#f0f2f5]" />;
 }
 
+function Silhouette() {
+  return <div className="mx-auto mb-4 size-[82px] overflow-hidden rounded-full bg-[#d9dde5]" aria-label="Professional silhouette"><img src={teamProfileSilhouette} alt="Professional silhouette" className="h-full w-full object-cover object-top" /></div>;
+}
+
 function MemberCard({ name, credentials }: TeamMember) {
   return (
     <article className="bg-[#f8f9fa] border border-[#e8eaed] rounded-[12px] px-6 py-6 md:px-7 md:py-7 text-center">
+      <Silhouette />
       <h3 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[16px] md:text-[19px] leading-tight">
         <span aria-hidden="true" className="mr-2">•</span>{name}
       </h3>
@@ -47,10 +53,10 @@ function TeamContent() {
   return (
     <main className="w-full bg-white px-4 md:px-[40px] py-7 md:py-9 flex flex-col items-center">
       <section className="w-full text-center">
-        <h1 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[23px] md:text-[28px] leading-tight">
+        <h1 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[20px] md:text-[24px] leading-tight">
           Consulting Principal/CEO
         </h1>
-        <h2 className="mt-3 font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[17px] md:text-[21px] leading-tight">
+        <Silhouette /><h2 className="mt-3 font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[17px] md:text-[21px] leading-tight">
           <span aria-hidden="true" className="mr-2">•</span>Mr. Matthew A. Aziegbe
         </h2>
         <p className="mt-3 font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[15px]">CMC, FIMC, MNIVS, MNCS, RSV</p>
@@ -62,7 +68,7 @@ function TeamContent() {
       <div className="mt-6 md:mt-7 flex flex-col items-center w-full">
         <Rule />
         <section className="mt-6 w-full">
-          <h2 className="text-center font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[23px] md:text-[28px] leading-tight">Consulting Fellows</h2>
+          <h2 className="text-center font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[20px] md:text-[24px] leading-tight">Consulting Fellows</h2>
           <div className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 w-full">
             {FELLOWS.map((member) => <MemberCard key={member.name} {...member} />)}
           </div>
@@ -72,7 +78,7 @@ function TeamContent() {
       <div className="mt-6 md:mt-7 flex flex-col items-center w-full">
         <Rule />
         <section className="mt-6 w-full max-w-[970px]">
-          <h2 className="text-center font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[23px] md:text-[28px] leading-tight">External Consultants</h2>
+          <h2 className="text-center font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[20px] md:text-[24px] leading-tight">External Consultants</h2>
           <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
             {EXTERNAL_CONSULTANTS.map((member) => <MemberCard key={member.name} {...member} />)}
           </div>
@@ -82,8 +88,8 @@ function TeamContent() {
       <div className="mt-6 md:mt-7 flex flex-col items-center w-full text-center">
         <Rule />
         <section className="mt-6">
-          <h2 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[23px] md:text-[28px] leading-tight">Technical Adviser</h2>
-          <h3 className="mt-3 font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[17px] md:text-[21px] leading-tight"><span aria-hidden="true" className="mr-2">•</span>Mr. Olusina Gbenga</h3>
+          <h2 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[20px] md:text-[24px] leading-tight">Technical Adviser</h2>
+          <Silhouette /><h3 className="mt-3 font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[17px] md:text-[21px] leading-tight"><span aria-hidden="true" className="mr-2">•</span>Mr. Olusina Gbenga</h3>
           <p className="mt-3 font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[15px] leading-snug">PfDip (Advert), PGD (Digital Media &amp; Comm), MSc (Media Comm), FRPA</p>
         </section>
       </div>

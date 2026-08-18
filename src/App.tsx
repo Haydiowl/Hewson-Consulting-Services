@@ -6,13 +6,15 @@ import CRESupportPage from "./CRESupportPage";
 import ReviewPage from "./ReviewPage";
 import TeamPage from "./TeamPage";
 import ContactPage from "./ContactPage";
-import BlogPage, { AwardsPage, BlogPostPage } from "./BlogPage";
+import BlogPage, { AwardsPage, BlogPostPage, EventsPage, TrendsPage } from "./BlogPage";
 
 function getPage() {
   const hash = window.location.hash;
   if (/^#\/blog\/\d+/.test(hash)) return "blog-post";
   if (hash.startsWith("#/blog")) return "blog";
   if (hash.startsWith("#/awards")) return "awards";
+  if (hash.startsWith("#/events")) return "events";
+  if (hash.startsWith("#/trends")) return "trends";
   if (hash.startsWith("#/about")) return "about";
   if (hash.startsWith("#/services")) return "services";
   if (hash.startsWith("#/cre-support")) return "cre-support";
@@ -43,5 +45,7 @@ export default function App() {
   if (page === "blog-post") return <BlogPostPage postId={Number(window.location.hash.match(/\d+/)?.[0])} />;
   if (page === "blog") return <BlogPage />;
   if (page === "awards") return <AwardsPage />;
+  if (page === "events") return <EventsPage />;
+  if (page === "trends") return <TrendsPage />;
   return <HewsonPage />;
 }

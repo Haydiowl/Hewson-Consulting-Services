@@ -54,7 +54,7 @@ const FLAGSHIP_SERVICES = [
 function FlagshipServicesSection() {
   return (
     <div className="bg-white w-full px-3 md:px-[40px] py-6 md:py-10">
-      <h2 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[20px] md:text-[28px] lg:text-[36px] text-center leading-tight">
+      <h2 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[17px] md:text-[22px] lg:text-[26px] text-center leading-tight">
         Our Flagship Support Services
       </h2>
       <div className="flex flex-col gap-5 md:gap-6 mt-8 md:mt-12">

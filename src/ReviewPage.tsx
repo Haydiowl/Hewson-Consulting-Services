@@ -1,5 +1,5 @@
 import { NavBar, Hero, NavLinks, Footer } from "./HewsonPage";
-import businessSegmentImg from "./imports/Business_segment.png";
+import businessSegmentImg from "./imports/business-segment-diagram-correction.png";
 
 // ---------------------------------------------------------------------------
 // Section 1 — Intro
@@ -28,13 +28,13 @@ function IntroSection() {
 function IndustryScopeSection() {
   return (
     <div className="bg-white w-full px-3 md:px-[40px] py-6 md:py-10">
-      <h2 className="font-['Inter:Bold',sans-serif] font-bold text-[#232323] text-[20px] md:text-[28px] lg:text-[34px] text-center leading-tight mb-6 md:mb-8">
+      <h2 className="font-['Inter:Bold',sans-serif] font-bold text-[#232323] text-[17px] md:text-[22px] lg:text-[26px] text-center leading-tight mb-6 md:mb-8">
         INDUSTRY SCOPE
       </h2>
       <img
         src={businessSegmentImg}
         alt="Business Segments — 10 Domain of Hewson Consulting Focus"
-        className="w-[55%] sm:w-[45%] md:w-[38%] max-w-[380px] mx-auto h-auto object-contain"
+        className="w-full max-w-[760px] mx-auto h-auto object-contain"
       />
     </div>
   );

@@ -5,6 +5,7 @@ import logosImg from "./imports/Logos.png";
 import ictLogoImg from "./imports/Ict_consultant_logo.png";
 import brandLogoImg from "./imports/WhatsApp_Image_2026-08-10_at_14.43.44__1__1.png";
 import fullLogoImg from "./imports/Logo_2_.png";
+import homePlanningSilhouette from "./imports/home-planning-silhouette.jpg";
 
 // ---------------------------------------------------------------------------
 // Data
@@ -14,7 +15,7 @@ const SLIDES = [
   {
     text: "Operations",
     sub: "Streamlining business processes and optimizing performance across your entire organisation for measurable, lasting results.",
-    img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=85",
+    img: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1920&q=85",
   },
   {
     text: "Strategy",
@@ -32,10 +33,11 @@ const SLIDES = [
     img: "https://images.unsplash.com/photo-1602497485099-e41a116a272c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920",
   },
   {
-    text: "Resources",
-    sub: "Building capable teams, developing talent and deploying the right manpower to power your organisation's growth engine.",
+    text: "CREprocess",
+    sub: "Supporting CRE operators through integrated processes and advisory.",
     img: "https://images.unsplash.com/photo-1739298061757-7a3339cee982?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920",
   },
+  { text: "Advisory", sub: "Practical advisory for sustainable performance and growth.", img: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1920&q=85" },
 ];
 
 export const NAV_LINKS: { label: string; href: string }[] = [
@@ -122,7 +124,7 @@ export function NavBar({ topButtonLabel = "Blog", topButtonHref = "#/blog" }: { 
 
         {/* CENTRE — "Our hotline | Email box" baseline-aligned with logo text */}
         <div className="hidden md:flex items-end justify-center font-['Inter:Medium',sans-serif] font-medium text-[#565966] whitespace-nowrap gap-0 text-[15px] lg:text-[17px] xl:text-[20px]">
-          <a href="tel:+2348066894422" className="hover:text-[#ff383c] transition-colors">Our Hotline</a>
+          <a href="tel:+2348096465555" className="hover:text-[#ff383c] transition-colors">Our Hotline</a>
           <span className="mx-3 text-[#dfe2e8]">|</span>
           <a href="#/contact" className="hover:text-[#ff383c] transition-colors">Email Box</a>
         </div>
@@ -250,16 +252,16 @@ export function Hero() {
     <div className="relative w-full overflow-hidden py-12 md:py-20">
       {/* background image */}
       <div className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=85')" }} />
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1920&q=85')", filter: "grayscale(1) brightness(.48)" }} />
       {/* red overlay */}
       <div className="absolute inset-0 bg-[#c30307]/80" />
       {/* ticker — constrained to 70% width so text never reaches screen edges */}
       <div className="relative z-10 overflow-hidden mx-auto w-[70%]">
         <div className="ticker-track whitespace-nowrap">
           {[...SLIDES, ...SLIDES].map((s, i) => (
-            <span key={i}
-              className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[16px] sm:text-[22px] md:text-[30px] lg:text-[38px] text-white leading-none px-3 md:px-5 inline-block">
-              {s.text}.
+            <span key={i} className="inline-flex items-center font-['Inter:Semi_Bold',sans-serif] font-semibold text-[16px] sm:text-[22px] md:text-[30px] lg:text-[38px] text-white leading-none">
+              <span className="px-3 md:px-5">{s.text}</span>
+              <span aria-hidden="true" className="mx-3 md:mx-5 inline-flex size-[0.35em] shrink-0 rounded-full bg-current" />
             </span>
           ))}
         </div>
@@ -273,7 +275,9 @@ export function Hero() {
 // ---------------------------------------------------------------------------
 
 export function NavLinks({ activePage = "home" }: { activePage?: "home" | "about" | "services" | "cre-support" | "review" | "team" | "contact" }) {
+  const pageTitles = { home: "Home", about: "About", services: "Services", "cre-support": "CRE Support", review: "Review", team: "Team", contact: "Contact" };
   return (
+    <>
     <nav className="hidden md:flex flex-wrap gap-x-5 gap-y-2 items-center justify-center py-4 w-full px-4">
       {NAV_LINKS.map(({ label, href }) => {
         const isActive =
@@ -296,6 +300,8 @@ export function NavLinks({ activePage = "home" }: { activePage?: "home" | "about
         );
       })}
     </nav>
+    <h1 className="px-4 pb-6 pt-2 text-center font-['Inter:Semi_Bold',sans-serif] text-[18px] font-semibold text-[#232323] md:text-[21px]">{pageTitles[activePage]}</h1>
+    </>
   );
 }
 
@@ -329,9 +335,9 @@ function ContentSections() {
     <div id="services" className="bg-[#fee] flex flex-col gap-4 md:gap-8 w-full px-3 md:px-[40px] py-4 md:py-[32px]">
       {/* Section 1 — image left, text right */}
       <div className="flex flex-col md:flex-row md:items-stretch gap-4 md:gap-5">
-        <div className="rounded-[10px] overflow-hidden md:flex-1 shrink-0 h-[220px] md:h-full self-stretch min-h-0">
-          <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=900"
-            alt="Chess pieces representing business strategy and consulting"
+        <div className="rounded-[10px] overflow-hidden md:flex-1 shrink-0 h-[220px] md:h-auto self-stretch min-h-0">
+          <img src={homePlanningSilhouette}
+            alt="Silhouettes of business professionals in an office"
             className="w-full h-full object-cover" />
         </div>
         <div className="flex md:flex-1 items-center px-1 md:px-5 py-3 md:py-6">
@@ -370,7 +376,7 @@ function WhyConsultUs() {
 
   return (
     <div id="review" className="bg-[#f8f9fa] flex flex-col gap-5 md:gap-[36px] items-start justify-center px-4 sm:px-8 md:px-20 lg:px-28 xl:px-36 py-6 md:py-[64px] w-full">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[20px] md:text-[28px] lg:text-[34px] text-center w-full leading-tight">
+      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[17px] md:text-[22px] lg:text-[26px] text-center w-full leading-tight">
         WHY CONSULT US?
       </p>
       <div className="flex flex-col md:flex-row gap-4 md:gap-8 w-full">
@@ -431,7 +437,7 @@ export function Footer() {
 
       <div className="flex flex-col items-center gap-1 font-['Inter:Medium',sans-serif] font-medium text-[12px] md:text-[16px] lg:text-[20px] text-white text-center">
         <div className="flex flex-wrap justify-center gap-x-3 gap-y-1">
-          <a href="tel:+2348066894422" className="no-underline text-white hover:opacity-70 transition-opacity">Tel: +234-8066894422</a>
+          <a href="tel:+2348096465555" className="no-underline text-white hover:opacity-70 transition-opacity">Tel: +234-8096465555</a>
           <a href="tel:+2348096465555" className="no-underline text-white hover:opacity-70 transition-opacity">+234-8096465555</a>
         </div>
         <div className="flex flex-wrap justify-center gap-x-3 gap-y-1">
@@ -447,13 +453,13 @@ export function Footer() {
           BLOG (Articles, News &amp; Events)
         </p>
         <div className="flex gap-[8px] items-center shrink-0">
-          <SocialButton href="https://www.linkedin.com/in/matthew-a-aziegbe-fimc-mnivs-mncs-rsv-81729634/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgxZ3NtE2QtGFcODuurfl%2Fg%3D%3D">
+          <SocialButton href="https://www.linkedin.com/company/hewson-consulting-services/">
             <svg fill="none" height="20" viewBox="0 0 20 20" width="20"><path d={svgPaths.p32c13b80} fill="#232323" /></svg>
           </SocialButton>
-          <SocialButton href="https://facebook.com">
+          <SocialButton href="https://www.facebook.com/share/1BgAJPMP5x/">
             <svg fill="none" height="20" viewBox="0 0 20 20" width="20"><path d={svgPaths.p2e2cfc00} fill="#232323" /></svg>
           </SocialButton>
-          <SocialButton href="https://x.com">
+          <SocialButton href="https://x.com/HewsonServices">
             <div className="overflow-clip relative size-[20px]">
               <div className="absolute inset-[4.69%_0]" style={{
                 maskImage: `url("${imgGroup}")`, maskSize: "20px 20px", maskRepeat: "no-repeat", maskPosition: "0px -0.937px",
@@ -465,7 +471,7 @@ export function Footer() {
               </div>
             </div>
           </SocialButton>
-          <SocialButton href="mailto:info@hewson-consult.com">
+          <SocialButton href="https://www.google.com/search?q=Hewson+Consulting+Services&stick=H4sIAAAAAAAA_-NgU1I1qDA0ME6yNE5NSjRLs0hLNUizMqiwNDc3TLFIMki0NEoxSkxOXMQq5ZFaXpyfp-Ccn1dcmlOSmZeuEJxaVJaZnFoMAEf0D8BGAAAA&hl=en-GB&mat=CWrpVHVW-YQsElcBa0lj_xAoj7Dx7K3G8wDuhNfBwMyl6ItrF0JBTTwC3YhX0eOydvOYZF9-eDZzJ_gXdrZNq7wa4OgGkyXfjhre4JzVE51oj4PzrfUFOwYUBAhGLipTpmI&authuser=0#ebo=0">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <text x="10" y="15" textAnchor="middle" fontFamily="Arial,sans-serif" fontSize="15" fontWeight="700" fill="#4285F4">G</text>
             </svg>

@@ -1,4 +1,5 @@
 import { NavBar, Hero, NavLinks, Footer } from "./HewsonPage";
+import technicalSupportIllustration from "./imports/about-technical-support-illustration.png";
 
 // ---------------------------------------------------------------------------
 // About intro — three paragraphs, full-width text
@@ -14,13 +15,13 @@ function AboutIntro() {
         In the complex landscape of high-stake real estate, success isn’t just about acquiring CRE assets but optimizing their returns. It’s more about the structural stability of the business that operate them, and their capacity to optimize net earnings and leverage on existing assets as resources for acquisition of further assets. Outcomes that require expert strategic guide. 
 
       </p>
-      <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
+      <div className="flex flex-col gap-4 md:flex-row md:items-center"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85" alt="Commercial real estate" className="h-[230px] w-full rounded-[10px] object-cover md:w-2/3" /><p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
         Our business service division offer support to companies that aspire to improve their
         performance and profitability in the most effective way. Accordingly, we institute for companies
         the organizational processes, technology and practices that optimize their operations. Our
         expertise avails organizations with proven and flexible methods of analyzing, qualifying and
         delivering on products and services.
-      </p>
+      </p></div>
     </div>
   );
 }
@@ -32,25 +33,19 @@ function AboutIntro() {
 function ImageTextSection() {
   return (
     <div className="bg-[#f8f9fa] w-full px-3 md:px-[40px] py-6 md:py-10">
-      <div className="flex flex-col md:flex-row md:items-stretch gap-4 md:gap-8">
-        {/* image */}
-        <div className="rounded-[10px] overflow-hidden shrink-0 h-[220px] md:h-auto md:w-[42%] self-stretch">
-          <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=900"
-            alt="Commercial real estate and enterprise development"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        {/* text */}
-        <div className="flex flex-1 items-center">
-          <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.84] text-justify">
-            Our technical support division handle enterprise-level development project, stretching from
-            conception through assemblage, financing and execution to management. Our effectiveness
-            enables developers and investors achieve optimization across commercial real estate's entire
-            project and asset life cycle. Projects that stretch across different asset categories,
-            namely residential, commercial and others.
-          </p>
-        </div>
+      <div className="flex flex-col gap-4 md:flex-row-reverse md:items-center">
+        <img
+          src={technicalSupportIllustration}
+          alt="Technical support and commercial real estate illustration"
+          className="h-[230px] w-full rounded-[10px] object-cover md:w-2/3"
+        />
+        <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
+          Our technical support division handle enterprise-level development project, stretching from
+          conception through assemblage, financing and execution to management. Our effectiveness
+          enables developers and investors achieve optimization across commercial real estate's entire
+          project and asset life cycle. Projects that stretch across different asset categories,
+          namely residential, commercial and others.
+        </p>
       </div>
     </div>
   );
@@ -94,6 +89,7 @@ function ServicesPath() {
       <h2 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[20px] md:text-[28px] lg:text-[34px] text-center leading-tight">
         Our Services Path
       </h2>
+      <p className="-mt-3 mx-auto max-w-[760px] text-justify font-['Inter:Medium',sans-serif] text-[13px] leading-[1.6] text-[#565966] md:text-[15px]">We serve organizations through consultancy, training and facilitation, guided by international best practices, integrity and devotion.</p>
       <div className="flex flex-col sm:flex-row gap-5 md:gap-6 w-full">
         {SERVICE_CARDS.map(({ title, body }) => (
           <div key={title}
