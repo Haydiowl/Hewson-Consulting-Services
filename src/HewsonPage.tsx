@@ -313,7 +313,7 @@ function AboutSection() {
   return (
     <div id="about" className="bg-[#f8f9fa] flex items-center justify-start px-3 md:px-[40px] py-6 md:py-10 w-full">
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[14px] md:text-[16px] lg:text-[19px] text-justify leading-[1.7] w-full">
-       We are an accredited niche consulting firm, operating as strategic growth architects and technical project facilitators. Our consultancy team comprises core management, IT, appraisal and related field experts with subject matter insight. The practice has specialized domain expertise that enables us function as business force multiplier for companies across commercial real estate (CRE) &amp; allied industry. Our experience help industry players overcome critical challenges and transform their business pursuit.  ; 
+       We are an accredited niche consulting firm, operating as strategic growth architects and technical project facilitators. Our consultancy team comprises core management, IT, appraisal and related field experts with subject matter insight. The practice has specialized domain expertise that enables us function as business force multiplier for companies across commercial real estate (CRE) &amp; allied industry. Our experience help industry players overcome critical challenges and transform their business.   
       </p>
     </div>
   );
@@ -355,7 +355,7 @@ function ContentSections() {
       {/* Section 2 — full-width text */}
       <div className="px-1 md:px-5 py-3 md:py-6">
         <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.84] text-justify w-full">
-          At Hewson, we recognize that effectiveness in management process, technology and strategy execution drive profitability. When properly fitted together, their combined synergy accentuates value increase, which ultimately drive corporate growth. Ultimately, real estate &amp; allied organizations also require niche consultants - such as ours - for problem solving, improvement and fresh perspective. Our guidance offers strategic level initiatives, sound decision-aiding analytics and innovative smart solutions.;
+          At Hewson, we recognize that effectiveness in management process, technology and strategy execution drive increase. When properly fitted together, their combined synergy accentuates value increase, which ultimately drive corporate growth. Invariably, real estate &amp; allied organizations also require niche consultants - such as ours - for problem solving, improvement and fresh perspective. Our guidance offers strategic level initiatives, sound decision-aiding analytics and innovative smart solutions.;
         </p>
       </div>
     </div>

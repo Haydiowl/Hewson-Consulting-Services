@@ -8,7 +8,7 @@ function IntroSection() {
   return (
     <div className="bg-[#f8f9fa] w-full px-3 md:px-[40px] py-5 md:py-8">
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
-        Our integrated CRE services offer organizations with exceptional core management &amp; IT application services, alongside project development &amp; planning. Ours empower senior executive teams, developers and companies to perform with seamless effort. Our business service division and technical support division offer a one-stop solution center 
+        Our integrated CRE services offer organizations with exceptional core management &amp; IT application services, alongside project development &amp; planning. Ours empower senior executive teams, developers and companies to perform with seamless effort. Our business service division and technical support division offer a one-stop solution centre. 
       </p>
     </div>
   );

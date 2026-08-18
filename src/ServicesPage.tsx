@@ -41,7 +41,7 @@ function Intro() {
   return (
     <div className="bg-white w-full px-3 md:px-[40px] py-5 md:py-8">
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
-        We offer management wide support to organizations and strategic due diligence to private equity firms operating under our defined sector. Our services help operators solve business and technical issues stretching across general operations, core function and capital provision.
+        We offer management wide support to organizations and strategic due diligence to private equity firms operating under our defined sector. Our services help operators solve business and technical issues stretching across general operations, core function and resource provision.
       </p>
     </div>
   );
@@ -202,7 +202,7 @@ function CRESupportSection() {
     <div className="bg-white w-full px-3 md:px-[40px] py-5 md:py-8">
       <SectionHeading>4. Our Enterprise CRE Support</SectionHeading>
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
-        We practice at the intersection of real-estate pursuit, technology and management practice and, therefore, well positioned as experts in enterprise level, real-estate business consulting. We offer special packages to clients as business advisors, IT integrators & project appraisers, who delight in empowering teams, optimizing business performance, driving decision making, enhancing project development and bridging skill deficiency. Explore More, Click: CRE Support
+        We practice at the intersection of real-estate pursuit, technology and management practice. Therefore, well positioned as specialist in real-estate business consulting & allied services. Our package covers business advisory, IT integration & project appraisal. We delight in empowering teams, optimizing business performance, driving decision making, enhancing project development and bridging skill deficiency. <a href="#/cre-support" className="font-semibold underline">Explore More</a>
       </p>
     </div>
   );

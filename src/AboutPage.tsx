@@ -1,5 +1,4 @@
 import { NavBar, Hero, NavLinks, Footer } from "./HewsonPage";
-import technicalSupportIllustration from "./imports/about-technical-support-illustration.png";
 
 // ---------------------------------------------------------------------------
 // About intro — three paragraphs, full-width text
@@ -7,15 +6,15 @@ import technicalSupportIllustration from "./imports/about-technical-support-illu
 
 function AboutIntro() {
   return (
-    <div className="bg-[#f8f9fa] w-full px-3 md:px-[40px] py-6 md:py-10 flex flex-col gap-4 md:gap-6">
+    <div className="bg-[#f8f9fa] w-full px-3 md:px-[40px] pt-6 pb-2 md:pt-10 md:pb-3 flex flex-col gap-4 md:gap-6">
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
-        Our practice is a problem-solving enterprise with industry niche, established in Nigeria and operating since 2018. We specialize in bridging the hollow gap between core management, IT system, and real-estate business operations in order to improve estate projects, asset performance and financial ROI metrics for CRE/allied sector companies.
+        Our practice is a problem-solving enterprise with industry niche, established in Nigeria and operating since 2018. We specialize in bridging gap between core management, IT system, and real-estate business operations in order to improve estate projects, asset performance and financial ROI metrics for CRE/allied sector companies.
       </p>
       <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
         In the complex landscape of high-stake real estate, success isn’t just about acquiring CRE assets but optimizing their returns. It’s more about the structural stability of the business that operate them, and their capacity to optimize net earnings and leverage on existing assets as resources for acquisition of further assets. Outcomes that require expert strategic guide. 
 
       </p>
-      <div className="flex flex-col gap-4 md:flex-row md:items-center"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85" alt="Commercial real estate" className="h-[230px] w-full rounded-[10px] object-cover md:w-2/3" /><p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
+      <div className="flex flex-col gap-4 md:flex-row md:items-stretch"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85" alt="Commercial real estate" className="h-[230px] w-full rounded-[10px] object-cover md:h-auto md:w-2/5" /><p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify md:flex-1">
         Our business service division offer support to companies that aspire to improve their
         performance and profitability in the most effective way. Accordingly, we institute for companies
         the organizational processes, technology and practices that optimize their operations. Our
@@ -32,14 +31,14 @@ function AboutIntro() {
 
 function ImageTextSection() {
   return (
-    <div className="bg-[#f8f9fa] w-full px-3 md:px-[40px] py-6 md:py-10">
-      <div className="flex flex-col gap-4 md:flex-row-reverse md:items-center">
+    <div className="bg-[#f8f9fa] w-full px-3 md:px-[40px] pt-2 pb-6 md:pt-3 md:pb-10">
+      <div className="flex flex-col gap-4 md:flex-row-reverse md:items-stretch">
         <img
-          src={technicalSupportIllustration}
-          alt="Technical support and commercial real estate illustration"
-          className="h-[230px] w-full rounded-[10px] object-cover md:w-2/3"
+          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85"
+          alt="Modern commercial office interior for technical project support"
+          className="h-[230px] w-full rounded-[10px] object-cover md:h-auto md:w-2/5"
         />
-        <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify">
+        <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[13px] md:text-[16px] lg:text-[19px] leading-[1.7] text-justify md:flex-1">
           Our technical support division handle enterprise-level development project, stretching from
           conception through assemblage, financing and execution to management. Our effectiveness
           enables developers and investors achieve optimization across commercial real estate's entire
@@ -66,7 +65,7 @@ const SERVICE_CARDS = [
   },
   {
     title: "Mission Statement",
-    body: "Using multidiscipline team approach and industry field insight that benefit stake holders and clients.",
+    body: "Rendering novel solutions, using interdisciplinary team approach and industry field insight.",
   },
 ];
 
@@ -87,17 +86,19 @@ function ServicesPath() {
   return (
     <div className="bg-white w-full px-3 md:px-[40px] py-8 md:py-14 flex flex-col gap-6 md:gap-10 items-center">
       <h2 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[20px] md:text-[28px] lg:text-[34px] text-center leading-tight">
-        Our Services Path
+        Our Service Path
       </h2>
-      <p className="-mt-3 mx-auto max-w-[760px] text-justify font-['Inter:Medium',sans-serif] text-[13px] leading-[1.6] text-[#565966] md:text-[15px]">We serve organizations through consultancy, training and facilitation, guided by international best practices, integrity and devotion.</p>
+      <p className="-mt-3 mx-auto max-w-[760px] text-center font-['Inter:Medium',sans-serif] text-[13px] leading-[1.6] text-[#565966] md:text-[15px]">We serve organizations through consultancy, training and facilitation, guided by international best practices, integrity and devotion.</p>
       <div className="flex flex-col sm:flex-row gap-5 md:gap-6 w-full">
         {SERVICE_CARDS.map(({ title, body }) => (
           <div key={title}
             className="flex flex-col gap-3 flex-1 bg-white rounded-[12px] border border-[#f0f2f5] shadow-[0_2px_12px_rgba(0,0,0,0.07)] px-5 md:px-6 py-5 md:py-7">
-            <StarIcon />
-            <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[14px] md:text-[17px] lg:text-[20px] leading-tight">
-              {title}
-            </p>
+            <div className="flex items-center gap-3">
+              <StarIcon />
+              <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[14px] md:text-[17px] lg:text-[20px] leading-tight">
+                {title}
+              </p>
+            </div>
             <p className="font-['Inter:Medium',sans-serif] font-medium text-[#363b4b] text-[12px] md:text-[14px] lg:text-[17px] leading-[1.65] text-justify">
               {body}
             </p>
