@@ -5,7 +5,7 @@ import logosImg from "./imports/Logos.png";
 import ictLogoImg from "./imports/Ict_consultant_logo.png";
 import brandLogoImg from "./imports/WhatsApp_Image_2026-08-10_at_14.43.44__1__1.png";
 import fullLogoImg from "./imports/Logo_2_.png";
-import homePlanningSilhouette from "./imports/home-planning-silhouette.jpg";
+import homeBusinessHub from "./imports/home-business-hub.png";
 
 // ---------------------------------------------------------------------------
 // Data
@@ -336,8 +336,8 @@ function ContentSections() {
       {/* Section 1 — image left, text right */}
       <div className="flex flex-col md:flex-row md:items-stretch gap-4 md:gap-5">
         <div className="rounded-[10px] overflow-hidden md:flex-1 shrink-0 h-[220px] md:h-auto self-stretch min-h-0">
-          <img src={homePlanningSilhouette}
-            alt="Silhouettes of business professionals in an office"
+          <img src={homeBusinessHub}
+            alt="Modern commercial business hub"
             className="w-full h-full object-cover" />
         </div>
         <div className="flex md:flex-1 items-center px-1 md:px-5 py-3 md:py-6">

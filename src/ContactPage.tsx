@@ -1,11 +1,11 @@
 import { FormEvent, useState } from "react";
 import { Footer, Hero, NavBar, NavLinks } from "./HewsonPage";
-import contactSilhouette from "./imports/contact-nigerian-female-silhouette.avif";
+import contactProfessionalPortrait from "./imports/contact-professional-portrait.jpg";
 
 function ContactDetails() {
   return (
     <section className="w-full bg-white px-4 md:px-[40px] py-8 md:py-10">
-      <div className="mx-auto grid max-w-[900px] grid-cols-1 items-center gap-8 md:grid-cols-[1fr_315px] md:gap-8">
+      <div className="mx-auto grid max-w-[765px] grid-cols-1 items-center gap-8 md:grid-cols-[1fr_280px] md:gap-8">
         <div className="font-['Inter:Medium',sans-serif] font-medium text-[#565966] text-[13px] md:text-[15px] leading-[1.7]">
           <h1 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[17px] md:text-[19px]">Address</h1>
           <p className="mt-2">Location:&nbsp; Channels TV Avenue, Isheri North, Lagos, Nigeria</p>
@@ -16,11 +16,11 @@ function ContactDetails() {
           <p>Email:&nbsp; <a href="mailto:info@hewson-consult.com" className="hover:text-[#ff383c]">info@hewson-consult.com</a></p>
         </div>
         <div className="h-[244px] w-full overflow-hidden rounded-[10px] bg-[#737784]">
-          <img src={contactSilhouette} alt="Nigerian female professional silhouette, shown without her face" className="h-full w-full object-cover" />
+          <img src={contactProfessionalPortrait} alt="Professional Nigerian businesswoman" className="h-full w-full object-cover object-center" />
         </div>
       </div>
 
-      <div className="mx-auto mt-7 max-w-[900px] font-['Inter:Medium',sans-serif] font-medium text-[#565966] text-[13px] md:text-[15px] leading-[1.7]">
+      <div className="mx-auto mt-7 max-w-[765px] font-['Inter:Medium',sans-serif] font-medium text-[#565966] text-[13px] md:text-[15px] leading-[1.7]">
         <h2 className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#232323] text-[17px] md:text-[19px]">Feedback</h2>
         <p className="mt-2">Thanks for visiting Hewson Consulting Services. For enquiries and request, please fill the form below. We will get back to you soon.</p>
       </div>

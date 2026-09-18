@@ -82,7 +82,7 @@ const SCOPE_SEGMENTS = [
   },
   {
     number: 8,
-    title: "Housing/ Settlement Segment",
+    title: "Recreation/Hospitality Segment",
     items: ["Field recreation companies", "Hospitality sector companies"],
   },
   {
